@@ -1,1 +1,1 @@
-notepad %1
+start notepad %1
