@@ -1,5 +1,5 @@
 ping 192.168.11.17
-IF not %ERRORLEVEL% == 0 (
+IF not %ERRORLEVEL% == 1 (
 echo "OK"
 ) else (
 echo "NG"
