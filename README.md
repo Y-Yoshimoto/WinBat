@@ -25,10 +25,3 @@
     3. サービスを起動する
         Start-Service -Name "sshd"
         Set-Service -Name "sshd" -StartupType Automatic
-
-## その他初期構築
-    - ホスト名の設定
-        Rename-Computer -NewName ホスト名 -Force
-    - RDP有効化(ネットワーク認証OFF)
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Value "0"
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" -Name UserAuthentication" -Value "0"
